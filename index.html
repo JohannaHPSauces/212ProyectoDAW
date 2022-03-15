@@ -7,107 +7,97 @@
     <style>
         @import url('http://fonts.cdnfonts.com/css/04b30');
         @import url('http://www.fontsaddict.com/fontface/mario-kart-ds-regular.ttf');
-/* 
-    Author     : johanna Herrero Pozuelo
-	
-*/
-
 
 body{
 	font-family:OCR A Std, monospace;
 	/*background-image: url(images/retro4.jpg); */
      /* background-image: url("https://acegif.com/wp-content/gif/snwflks-5.gif"); */
 	background-repeat:no-repeat;
-	background-color:white;
+	background-color:rgb(215, 185, 250);
         background-size: cover;
 	
 }
-
+/* caja titulo */
 h2{ 
 	font-family: '04b', sans-serif;
 	text-shadow: black 0.1em 0.1em 0.2em;
 	text-align:center;
-	padding:6px;
-	color:red;
+	padding:10px;
+	color:crimson;
 	background-color:blueviolet;
 	margin-top:0%;
-	margin-right:10%;
-	margin-left:10%;
-	border: 4px dotted palegreen;
-	border-radius: 35px 0px 35px 0px;
-	-moz-border-radius: 35px 0px 35px 0px;
-	-webkit-border-radius: 35px 0px 35px 0px;
+	border: 8px dotted blue;
 }
 
 /*caja debajo de titulo*/
 .caja1{
-	text-shadow: black 0.1em 0.1em 0.2em;
-	background-color:red;
-	margin-top:0%;
-	margin-right:10%;
-	margin-left:10%;
-        border: 4px inset yellow;
+        background-color:red;
+        border: 4px inset blue;
 	border-radius: 35px 0px 35px 0px;
 	-moz-border-radius: 35px 0px 35px 0px;
 	-webkit-border-radius: 35px 0px 35px 0px;
 }
-
-
-.contenedor{
-        height: 350px;width: 850px;
-        /* border: 5px solid yellow; */
+/* menu */
+.contenedor1{
+        line-height: 50px;
+        padding: 2rem;
+        height: 160px; width:850px;
+        background: rgb(48, 20, 173);
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        border:4px solid blue;
+        color:white;
         border-radius: 0%;
-        /*background:rgb(255, 0, 200);*/
-        margin: 0 auto;
-        margin-top: 20vh;
+        margin: auto;
+        margin-top: 7vh;
+}
+span{
+        color:red;
+}
+.contenedor{
+        margin-top:4%;
+        /* width:90vw;height: 90vh; */
+        /* background: cornsilk; */
+}
+nav{
         display: flex;
+        margin: auto;
+        flex-flow: row nowrap;
+        width: 100%;height: 20%;
+        /* background:rgb(68, 50, 148); */
+        background: rgb(55, 143, 224);
+}
+.option{
+        
+        height: 100px;
+        background: blueviolet;
+        border: 4px dashed red;
+        margin: 6px;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        flex:1;
+        animation: 3s animateBorder infinite;
+}
 
-}
-ul{
-        display: flex;
-        flex-direction: column;
-        background: black;
-        opacity: 0.9;
-        border-radius: 5%;
-        outline:6px dashed rgb(255, 0, 128);
-        width: 80%;height: 80%;
-        margin:0 auto;
-        /* box-shadow: 0 0 0 6px #EA3556; */
-        animation: 1s animateBorder infinite;
-}
 @keyframes animateBorder {
   to {
     outline-color: #EA3556;
-    box-shadow: 0 0 0 6px white;
+    box-shadow: 0 0 0 6px blue;
   }
 }
-li a{
-        font-weight: bold;
-        text-decoration: none;
-}
-li:first-letter {
-	font-size: 1.5em;
-}
-
-ul li {
-        margin-top: 10px;
-        /* background-color: azure; */
-        list-style: none;
-        /* text-align: center; */
-        font-size: 32px;
-}
-ul li:hover{
-        width: 630px;height: 55px;
-        background: lime;
-        color: purple;
-        text-decoration:none; 
-
-}
-ul li:visited{
-        color:red;
+.option:hover{
+        background: crimson;
+        color:black;
 }
 footer{
-        background: blueviolet;
+        background: rgb(105, 35, 170);
         border-radius: 5px 5px 5px 5px;
         font-weight: bold;
         position: fixed;
@@ -118,55 +108,52 @@ footer{
         text-align: center;
         padding: 2px;
         vertical-align: middle;
-        animation-name: example;
-        animation: 10s example infinite;
-        animation-duration: infinite;
 }
-/*@keyframes example {
-  /* 0%   {background-color: green;}
-  20%  {background-color: yellow;} */
-  /*0%  {background-color: purple;}
-  15%  {background-color: blue;}
-  30%  {background-color:lightseagreen;}
-  60%  {background-color: mediumslateblue;}
-  80%  {background-color: rgb(7, 197, 7);}
-  100% {background-color: green;}*/
-  /* 80% {background-color: orangered;}
-  100% {background-color: palevioletred;} */
-/*}*/
+
 strong{
         color: black;
         font-size: 20px;
 }
 strong:hover{
-        color: blue;
+        color: aqua;
 }
+/* .option img{
+        display:flex;
+        margin-top: auto;
+        margin-left: -45px;
+	width:35px;
+	height:35px;
+        /* border:2px solid red; */
 a img{
-        border: 2px solid black;
         display: flex;
 	margin:auto;
 	width:35px;
 	height:35px;
 }
+a{
+    text-decoration: none;
+    color:white;
+}
 a img:hover{
         border: 2px solid red;
 }
+
 </style>
     <body>
         <header>
-            <h2>DESARROLLO DE APLICACIONES WEB2</h2> 
-			<div class="caja1"></div>
+                <h2>DESARROLLO DE APLICACIONES WEB2</h2> 
+	        <div class="caja1"></div>
 	</header> 
-
+        <div class="contenedor1"><span>Soy Johanna Herrero Pozuelo estudiante de Desarrollo de  Aplicaciones web.</span><br>
+                En esta página se encuentran todos los ejercicios y aplicaciones que han sido trabajados a lo largo del curso de DAW2.</div>
         <div class="contenedor">
-		<ul>
-                    <li><a href="212ProyectoDWES/indexProyectoDWES.php" class="c1">DESARROLLO WEB ENTORNO SERVIDOR</a></li>
-                    <li><a href="proyectoDWEC/ejercicio6"  class="c2">DESARROLLO WEB ENTORNO CLIENTE</a></li>
-                    <li><a href="pag2_css.html"  class="c3">DESPLIEGUE DE APLICACIONES WEB</a></li>
-                    <li><a href="proyectoDIW/indexDIW.php" class="c4">DISEÑO DE INTERFACES WEB</a></li>
-                </ul> 
+                <nav>
+                    <div class="option"><p>DWEC</p></div>
+                    <div class="option"><a href="212ProyectoDWES/indexProyectoDWES.php"><p>DWES</p></a></div>
+                    <div class="option"><p>DIW</p></div>
+                    <div class="option"><p>DAW</p></div>
+                </nav>
 	</div>
-        
 	<footer>2021-22 I.E.S. Los sauces. ©Todos los derechos reservados. <strong>Johanna Herrero Pozuelo</strong> 
                 <a href="https://github.com/JohannaHPSauces"><img src="images/git.png" alt="" class="git"></a>
 	</footer>
